@@ -1,0 +1,21 @@
+{
+  "name": "quan-ly-nhan-cong-tai-cong-truong",
+  "version": "1.0.0",
+  "description": "Hệ thống quản lý nhân công tại công trường",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "migrate": "cd server && npm run migrate",
+    "seed": "cd server && npm run seed"
+  },
+  "keywords": ["construction", "worker-management"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
